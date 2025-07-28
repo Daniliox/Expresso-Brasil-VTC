@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expresso Brasil VTC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0057a0, #009739, #fbd116);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #0057a0;
+    }
+    .cta {
+      background-color: #009739;
+      color: white;
+      padding: 15px;
+      margin: 30px 0;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1.2em;
+    }
+    .cta a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fbd116;
+      text-decoration: none;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #0057a0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    form button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Expresso Brasil VTC Logo">
+    <h1>Expresso Brasil VTC</h1>
+    <p>Levando o Brasil nas estradas da Europa</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Quem Somos</h2>
+      <p>Somos uma empresa virtual de transporte com paixão por caminhões, estradas e pela comunidade brasileira no TruckersMP. Fundada para unir motoristas de todo o Brasil em um ambiente amigável e organizado.</p>
+    </section>
+
+    <section>
+      <h2>Por que escolher a Expresso Brasil?</h2>
+      <ul>
+        <li>Eventos semanais com comboios organizados</li>
+        <li>Comunidade ativa no Discord</li>
+        <li>Respeito e profissionalismo nas estradas</li>
+        <li>Suporte para iniciantes</li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <p>Pronto para se juntar a nós?</p>
+      <a href="#formulario">Clique aqui para se inscrever</a>
+    </section>
+
+    <section id="formulario">
+      <h2>Formulário de Inscrição</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" required>
+
+        <label for="discord">Usuário no Discord</label>
+        <input type="text" id="discord" name="discord" placeholder="Ex: Danilo#1234" required>
+
+        <label for="truckersmp">ID do TruckersMP</label>
+        <input type="text" id="truckersmp" name="truckersmp" required>
+
+        <label for="experiencia">Experiência com ETS2/ATS</label>
+        <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+
+        <label for="disponibilidade">Disponibilidade para comboios</label>
+        <select id="disponibilidade" name="disponibilidade">
+          <option value="semana">Durante a semana</option>
+          <option value="fimdesemana">Fins de semana</option>
+          <option value="ambos">Ambos</option>
+        </select>
+
+        <button type="submit">Enviar Inscrição</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Expresso Brasil VTC - Todos os direitos reservados</p>
+    <p><a href="https://truckersmp.com/vtc">TruckersMP Oficial</a> | <a href="#">Nosso Discord</a></p>
+  </footer>
+</body>
+</html>
